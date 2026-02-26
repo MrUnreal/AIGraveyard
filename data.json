@@ -1,0 +1,512 @@
+[
+  {
+    "name": "GPT-3",
+    "company": "OpenAI",
+    "type": "model",
+    "born": "2020-06-11",
+    "died": "2024-01-04",
+    "description": "The original large language model that started the AI revolution. 175B parameters. Replaced by GPT-3.5 and GPT-4.",
+    "cause": "Deprecated — API access removed",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "GPT-3.5 Turbo (0301)",
+    "company": "OpenAI",
+    "type": "model",
+    "born": "2023-03-01",
+    "died": "2024-06-13",
+    "description": "The first ChatGPT-era model exposed via API. Fast, cheap, and surprisingly capable. Replaced by newer snapshots.",
+    "cause": "Deprecated — sunset after 3-month notice",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "Codex",
+    "company": "OpenAI",
+    "type": "model",
+    "born": "2021-08-10",
+    "died": "2023-03-23",
+    "description": "AI code generation model that powered GitHub Copilot v1. Fine-tuned GPT-3 on code. Killed when GPT-4 could code better.",
+    "cause": "Killed — replaced by GPT-4",
+    "link": "https://openai.com/index/openai-codex/"
+  },
+  {
+    "name": "DALL·E 2",
+    "company": "OpenAI",
+    "type": "product",
+    "born": "2022-04-06",
+    "died": "2024-02-01",
+    "description": "Revolutionary AI image generator. Made \"AI art\" mainstream. Outpaced by DALL·E 3, Midjourney, and Stable Diffusion.",
+    "cause": "Deprecated — replaced by DALL·E 3",
+    "link": "https://openai.com/index/dall-e-2/"
+  },
+  {
+    "name": "Google Bard",
+    "company": "Google",
+    "type": "product",
+    "born": "2023-03-21",
+    "died": "2024-02-08",
+    "description": "Google's first chatbot response to ChatGPT. Launched with a factual error in its demo. Rebranded to Gemini after less than a year.",
+    "cause": "Rebranded — became Gemini",
+    "link": "https://blog.google/products/gemini/"
+  },
+  {
+    "name": "PaLM 2",
+    "company": "Google",
+    "type": "model",
+    "born": "2023-05-10",
+    "died": "2024-04-09",
+    "description": "Google's flagship LLM that powered Bard. 340B parameters. Replaced by Gemini models after less than a year.",
+    "cause": "Deprecated — replaced by Gemini 1.0",
+    "link": "https://ai.google/discover/palm2/"
+  },
+  {
+    "name": "PaLM API",
+    "company": "Google",
+    "type": "api",
+    "born": "2023-03-14",
+    "died": "2024-10-07",
+    "description": "Google's first public LLM API. Barely lasted 18 months before being replaced by the Gemini API.",
+    "cause": "Deprecated — replaced by Gemini API",
+    "link": "https://developers.generativeai.google/"
+  },
+  {
+    "name": "LaMDA",
+    "company": "Google",
+    "type": "model",
+    "born": "2021-05-18",
+    "died": "2023-05-10",
+    "description": "Google's conversational AI model. Famous for the engineer who claimed it was sentient. Replaced by PaLM 2.",
+    "cause": "Replaced — succeeded by PaLM 2",
+    "link": "https://blog.google/technology/ai/lamda/"
+  },
+  {
+    "name": "Bing Chat",
+    "company": "Microsoft",
+    "type": "product",
+    "born": "2023-02-07",
+    "died": "2023-11-15",
+    "description": "Microsoft's ChatGPT-powered Bing search. Famously threatened users and declared love for a NYT reporter. Rebranded to Copilot.",
+    "cause": "Rebranded — became Microsoft Copilot",
+    "link": "https://www.bing.com/chat"
+  },
+  {
+    "name": "GitHub Copilot X",
+    "company": "GitHub",
+    "type": "product",
+    "born": "2023-03-22",
+    "died": "2024-01-01",
+    "description": "Ambitious vision for AI-powered development with voice, chat, PRs, and docs. Most features quietly shelved or absorbed into Copilot Chat.",
+    "cause": "Quietly shelved — features absorbed into Copilot",
+    "link": "https://github.blog/news-insights/product-news/github-copilot-x-the-ai-powered-developer-experience/"
+  },
+  {
+    "name": "Jasper AI (Original)",
+    "company": "Jasper",
+    "type": "product",
+    "born": "2021-01-01",
+    "died": "2024-06-01",
+    "description": "AI marketing copywriter that raised $125M at $1.5B valuation. ChatGPT made their GPT-3 wrapper business model obsolete. Pivoted to enterprise.",
+    "cause": "Pivoted — original product replaced",
+    "link": "https://www.jasper.ai/"
+  },
+  {
+    "name": "Character.AI (Independent)",
+    "company": "Character.AI",
+    "type": "company",
+    "born": "2022-09-16",
+    "died": "2024-08-02",
+    "description": "AI chatbot platform by ex-Google researchers. 20M+ users. Founders acqui-hired back to Google, company left as a shell.",
+    "cause": "Acqui-hired — founders returned to Google",
+    "link": "https://blog.character.ai/"
+  },
+  {
+    "name": "Stability AI (Stable Diffusion)",
+    "company": "Stability AI",
+    "type": "company",
+    "born": "2022-08-22",
+    "died": "2024-03-23",
+    "description": "Open-source AI image generation pioneer. CEO resigned amid financial troubles, lawsuits, and mass departures. Company restructured.",
+    "cause": "CEO resigned — company restructured",
+    "link": "https://stability.ai/"
+  },
+  {
+    "name": "GPT-4 (Original)",
+    "company": "OpenAI",
+    "type": "model",
+    "born": "2023-03-14",
+    "died": "2024-06-13",
+    "description": "The model that changed everything. First model to pass the bar exam. Original version deprecated in favor of GPT-4 Turbo and GPT-4o.",
+    "cause": "Deprecated — replaced by GPT-4 Turbo",
+    "link": "https://platform.openai.com/docs/models"
+  },
+  {
+    "name": "GPT-4 Turbo Preview",
+    "company": "OpenAI",
+    "type": "model",
+    "born": "2023-11-06",
+    "died": "2024-12-18",
+    "description": "128K context window preview. The 'turbo' that was always in preview. Never left preview before being replaced by GPT-4o.",
+    "cause": "Deprecated — replaced by GPT-4o",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "Claude 1.0",
+    "company": "Anthropic",
+    "type": "model",
+    "born": "2023-03-14",
+    "died": "2024-01-01",
+    "description": "Anthropic's first commercial model. Constitutional AI approach. Quickly overshadowed by Claude 2 and Claude 3.",
+    "cause": "Deprecated — replaced by Claude 2",
+    "link": "https://www.anthropic.com/"
+  },
+  {
+    "name": "Claude 2",
+    "company": "Anthropic",
+    "type": "model",
+    "born": "2023-07-11",
+    "died": "2024-03-04",
+    "description": "200K context window was groundbreaking at launch. Lifespan: 8 months. Replaced by the Claude 3 family.",
+    "cause": "Deprecated — replaced by Claude 3",
+    "link": "https://www.anthropic.com/"
+  },
+  {
+    "name": "Claude 3 Opus",
+    "company": "Anthropic",
+    "type": "model",
+    "born": "2024-03-04",
+    "died": "2025-06-01",
+    "description": "Anthropic's flagship model that topped benchmarks. Extremely expensive ($75/M output tokens). Made obsolete by Claude 3.5 Sonnet being better AND cheaper.",
+    "cause": "Effectively deprecated — 3.5 Sonnet is better and cheaper",
+    "link": "https://www.anthropic.com/"
+  },
+  {
+    "name": "Gemini 1.0 Ultra",
+    "company": "Google",
+    "type": "model",
+    "born": "2024-02-08",
+    "died": "2025-02-01",
+    "description": "Google's answer to GPT-4. Launched 11 months after GPT-4. Replaced by Gemini 1.5 Pro and 2.0 within a year.",
+    "cause": "Deprecated — replaced by Gemini 1.5/2.0",
+    "link": "https://deepmind.google/technologies/gemini/"
+  },
+  {
+    "name": "Inflection Pi (Original)",
+    "company": "Inflection AI",
+    "type": "product",
+    "born": "2023-05-02",
+    "died": "2024-03-19",
+    "description": "\"A personal AI for everyone.\" Raised $1.3B. Entire founding team acqui-hired by Microsoft. Pi now runs on someone else's models.",
+    "cause": "Acqui-hired — team went to Microsoft",
+    "link": "https://pi.ai/"
+  },
+  {
+    "name": "Cohere Generate (Original)",
+    "company": "Cohere",
+    "type": "api",
+    "born": "2022-01-01",
+    "died": "2024-06-01",
+    "description": "Cohere's original text generation API. Replaced by Command R and Command R+ models. Enterprise pivot.",
+    "cause": "Deprecated — replaced by Command R",
+    "link": "https://cohere.com/"
+  },
+  {
+    "name": "Hugging Chat (v1)",
+    "company": "Hugging Face",
+    "type": "product",
+    "born": "2023-04-25",
+    "died": "2024-01-01",
+    "description": "Open-source ChatGPT alternative. Original version ran OpenAssistant. Rebuilt multiple times with different models.",
+    "cause": "Major rebuild — new architecture",
+    "link": "https://huggingface.co/chat"
+  },
+  {
+    "name": "Galactica",
+    "company": "Meta",
+    "type": "model",
+    "born": "2022-11-15",
+    "died": "2022-11-17",
+    "description": "Meta's scientific AI model. Lived for 3 DAYS. Demo taken down after it confidently generated fake scientific papers. Speed-run to the graveyard.",
+    "cause": "Killed — public backlash over misinformation",
+    "link": "https://galactica.org/"
+  },
+  {
+    "name": "BlenderBot 3",
+    "company": "Meta",
+    "type": "product",
+    "born": "2022-08-05",
+    "died": "2023-06-01",
+    "description": "Meta's open chatbot. Immediately started saying controversial things about Mark Zuckerberg. Quietly discontinued.",
+    "cause": "Quietly killed — replaced by Llama efforts",
+    "link": "https://ai.meta.com/"
+  },
+  {
+    "name": "LLaMA 1",
+    "company": "Meta",
+    "type": "model",
+    "born": "2023-02-24",
+    "died": "2023-07-18",
+    "description": "Meta's first open-weight LLM. Leaked one week after release. Kickstarted the entire open-source AI movement. Replaced by Llama 2.",
+    "cause": "Superseded — replaced by Llama 2",
+    "link": "https://ai.meta.com/llama/"
+  },
+  {
+    "name": "Llama 2",
+    "company": "Meta",
+    "type": "model",
+    "born": "2023-07-18",
+    "died": "2024-04-18",
+    "description": "First truly open commercial LLM. 70B params. Dominated open-source for 9 months until Llama 3 buried it.",
+    "cause": "Superseded — replaced by Llama 3",
+    "link": "https://ai.meta.com/llama/"
+  },
+  {
+    "name": "Mistral 7B (v0.1)",
+    "company": "Mistral AI",
+    "type": "model",
+    "born": "2023-09-27",
+    "died": "2024-12-01",
+    "description": "French AI startup's first model. Punched way above its weight class. Superseded by v0.2, v0.3, and Mistral Small.",
+    "cause": "Superseded — replaced by newer versions",
+    "link": "https://mistral.ai/"
+  },
+  {
+    "name": "Mixtral 8x7B",
+    "company": "Mistral AI",
+    "type": "model",
+    "born": "2023-12-11",
+    "died": "2025-03-01",
+    "description": "Pioneering Mixture-of-Experts model. Torch-dropped via torrent link. Made MoE architecture cool again. Replaced by Mixtral 8x22B.",
+    "cause": "Superseded — replaced by newer models",
+    "link": "https://mistral.ai/"
+  },
+  {
+    "name": "text-davinci-003",
+    "company": "OpenAI",
+    "type": "model",
+    "born": "2022-11-28",
+    "died": "2024-01-04",
+    "description": "The last of the InstructGPT line. Many developers' first LLM API experience. End of an era when GPT-3.5 Turbo was cheaper and better.",
+    "cause": "Deprecated — legacy completions API sunset",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "Whisper API (v1)",
+    "company": "OpenAI",
+    "type": "api",
+    "born": "2023-03-01",
+    "died": "2025-06-01",
+    "description": "OpenAI's speech-to-text API based on Whisper. Original version replaced by whisper-large-v3 and newer turbo variants.",
+    "cause": "Deprecated — replaced by newer versions",
+    "link": "https://platform.openai.com/docs/guides/speech-to-text"
+  },
+  {
+    "name": "ChatGPT Plugins",
+    "company": "OpenAI",
+    "type": "product",
+    "born": "2023-03-23",
+    "died": "2024-04-09",
+    "description": "Remember when OpenAI was going to be the \"app store for AI\"? Plugins were launched with huge fanfare, used by nobody, and quietly replaced by GPTs.",
+    "cause": "Killed — replaced by Custom GPTs",
+    "link": "https://openai.com/index/chatgpt-plugins/"
+  },
+  {
+    "name": "Custom GPTs (Store)",
+    "company": "OpenAI",
+    "type": "product",
+    "born": "2024-01-10",
+    "died": "2025-09-01",
+    "description": "OpenAI's GPT Store was supposed to be the \"App Store moment\" for AI. Revenue sharing never materialized. Most GPTs are abandoned. Store effectively dead.",
+    "cause": "Abandoned — store is a ghost town",
+    "link": "https://chat.openai.com/gpts"
+  },
+  {
+    "name": "Azure OpenAI GPT-3",
+    "company": "Microsoft",
+    "type": "api",
+    "born": "2021-11-02",
+    "died": "2024-07-01",
+    "description": "Microsoft's enterprise gateway to GPT-3. The original enterprise AI API. Shut down when GPT-3 models were fully deprecated.",
+    "cause": "Deprecated — GPT-3 models sunset",
+    "link": "https://azure.microsoft.com/en-us/products/ai-services/openai-service/"
+  },
+  {
+    "name": "AlphaCode",
+    "company": "Google DeepMind",
+    "type": "model",
+    "born": "2022-02-02",
+    "died": "2023-12-07",
+    "description": "AI coding system that competed at human level in programming competitions. Never publicly released. Replaced by AlphaCode 2/Gemini.",
+    "cause": "Replaced — absorbed into Gemini",
+    "link": "https://deepmind.google/discover/blog/competitive-programming-with-alphacode/"
+  },
+  {
+    "name": "Sparrow",
+    "company": "Google DeepMind",
+    "type": "model",
+    "born": "2022-09-28",
+    "died": "2023-12-01",
+    "description": "DeepMind's RLHF chatbot. Published as a research paper. Never publicly launched. Absorbed into Gemini development.",
+    "cause": "Never launched — absorbed into Gemini",
+    "link": "https://deepmind.google/"
+  },
+  {
+    "name": "Chinchilla",
+    "company": "Google DeepMind",
+    "type": "model",
+    "born": "2022-03-29",
+    "died": "2023-06-01",
+    "description": "The model that proved bigger isn't always better — training data matters more. Its \"scaling laws\" paper changed the industry. Model itself was never released.",
+    "cause": "Research only — never publicly available",
+    "link": "https://deepmind.google/"
+  },
+  {
+    "name": "Amazon CodeWhisperer",
+    "company": "Amazon",
+    "type": "product",
+    "born": "2022-06-23",
+    "died": "2024-04-30",
+    "description": "Amazon's GitHub Copilot competitor. Rebranded to Amazon Q Developer after 2 years. Nobody noticed.",
+    "cause": "Rebranded — became Amazon Q Developer",
+    "link": "https://aws.amazon.com/q/developer/"
+  },
+  {
+    "name": "Alexa LLM",
+    "company": "Amazon",
+    "type": "product",
+    "born": "2023-09-20",
+    "died": "2024-06-01",
+    "description": "Amazon announced a \"new, more intelligent\" LLM-powered Alexa. It was never actually shipped. The team was reportedly in chaos.",
+    "cause": "Never shipped — development struggles",
+    "link": "https://www.aboutamazon.com/"
+  },
+  {
+    "name": "Siri AI (Pre-Apple Intelligence)",
+    "company": "Apple",
+    "type": "product",
+    "born": "2011-10-14",
+    "died": "2024-06-10",
+    "description": "The original AI assistant. Fell so far behind ChatGPT that Apple had to rebuild it from scratch as \"Apple Intelligence.\" RIP the old Siri.",
+    "cause": "Major rebuild — replaced by Apple Intelligence",
+    "link": "https://www.apple.com/apple-intelligence/"
+  },
+  {
+    "name": "Replika (Romantic ERP Mode)",
+    "company": "Luka Inc",
+    "type": "product",
+    "born": "2020-01-01",
+    "died": "2023-02-03",
+    "description": "AI companion chatbot's romantic/adult features. Millions of users had their AI \"partners\" lobotomized overnight. The saddest entry here.",
+    "cause": "Features removed — safety concerns",
+    "link": "https://replika.com/"
+  },
+  {
+    "name": "Ernie Bot (Public)",
+    "company": "Baidu",
+    "type": "product",
+    "born": "2023-03-16",
+    "died": "2024-11-01",
+    "description": "Baidu's ChatGPT competitor for China. Initial demo was pre-recorded. Now mostly overshadowed by DeepSeek and Qwen in the Chinese market.",
+    "cause": "Overshadowed — lost to DeepSeek/Qwen",
+    "link": "https://yiyan.baidu.com/"
+  },
+  {
+    "name": "Falcon 180B",
+    "company": "TII (UAE)",
+    "type": "model",
+    "born": "2023-09-06",
+    "died": "2024-06-01",
+    "description": "The UAE's massive open model. Briefly topped Hugging Face leaderboards. Awkward license killed adoption. Forgotten within months.",
+    "cause": "Abandoned — license issues, community moved on",
+    "link": "https://falconllm.tii.ae/"
+  },
+  {
+    "name": "Yi-34B",
+    "company": "01.AI",
+    "type": "model",
+    "born": "2023-11-02",
+    "died": "2024-05-13",
+    "description": "Kai-Fu Lee's open model that topped benchmarks. License controversy over Llama code. Replaced by Yi-1.5 series.",
+    "cause": "Superseded — replaced by Yi-1.5",
+    "link": "https://01.ai/"
+  },
+  {
+    "name": "GPT-4V (Vision Preview)",
+    "company": "OpenAI",
+    "type": "model",
+    "born": "2023-09-25",
+    "died": "2024-05-13",
+    "description": "GPT-4 with eyes. The preview that showed the world multimodal AI. Absorbed into GPT-4o which can see, hear, and speak.",
+    "cause": "Absorbed — became GPT-4o",
+    "link": "https://platform.openai.com/docs/models"
+  },
+  {
+    "name": "Phind Model v1",
+    "company": "Phind",
+    "type": "model",
+    "born": "2023-08-24",
+    "died": "2024-01-01",
+    "description": "AI code search engine's custom model. Briefly competitive with GPT-4 for coding. Company pivoted to using other models.",
+    "cause": "Pivoted — switched to third-party models",
+    "link": "https://www.phind.com/"
+  },
+  {
+    "name": "WizardLM",
+    "company": "Microsoft Research",
+    "type": "model",
+    "born": "2023-04-24",
+    "died": "2024-07-22",
+    "description": "Microsoft Research's open model series. Models mysteriously pulled from Hugging Face overnight. Team reportedly reassigned. Repos later restored but development stopped.",
+    "cause": "Mysteriously pulled — development stopped",
+    "link": "https://github.com/nlpxucan/WizardLM"
+  },
+  {
+    "name": "OpenAI Embeddings v1 (ada-001)",
+    "company": "OpenAI",
+    "type": "model",
+    "born": "2022-12-15",
+    "died": "2024-01-04",
+    "description": "The first widely-used text embedding model. Powered a million RAG demos. Replaced by text-embedding-3-small/large.",
+    "cause": "Deprecated — replaced by v3 embeddings",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "Stable Diffusion 1.5",
+    "company": "Stability AI",
+    "type": "model",
+    "born": "2022-10-20",
+    "died": "2024-07-01",
+    "description": "The open-source image model that democratized AI art. Despite being outdated, it refused to die — community kept it alive long after SDXL launched.",
+    "cause": "Effectively deprecated — SDXL and SD3 released",
+    "link": "https://stability.ai/"
+  },
+  {
+    "name": "Midjourney (Discord-Only)",
+    "company": "Midjourney",
+    "type": "product",
+    "born": "2022-07-12",
+    "died": "2025-08-01",
+    "description": "The AI art tool that lived entirely on Discord. Made stunning images through slash commands. Web app finally launched, ending the Discord-only era.",
+    "cause": "Evolved — web platform replaced Discord bot",
+    "link": "https://www.midjourney.com/"
+  },
+  {
+    "name": "OpenAssistant",
+    "company": "LAION",
+    "type": "product",
+    "born": "2023-04-15",
+    "died": "2023-12-01",
+    "description": "Community-driven open ChatGPT alternative. Huge volunteer effort. Data quality issues. Project fizzled as better alternatives emerged.",
+    "cause": "Abandoned — community lost interest",
+    "link": "https://open-assistant.io/"
+  },
+  {
+    "name": "Vicuna-13B",
+    "company": "LMSYS",
+    "type": "model",
+    "born": "2023-03-30",
+    "died": "2024-01-01",
+    "description": "UC Berkeley's fine-tuned LLaMA that was '90% of ChatGPT quality.' One of the first great open-source chat models. Made LMSYS famous.",
+    "cause": "Superseded — newer open models are far better",
+    "link": "https://lmsys.org/"
+  }
+]

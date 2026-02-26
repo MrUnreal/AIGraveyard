@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIGraveyard — RIP to Every Dead AI Model, Product & API</title>
+    <meta name="description" content="A memorial for every deprecated AI model, product, and API. The killedbygoogle of artificial intelligence.">
+    <meta name="keywords" content="deprecated AI models, GPT-3 sunset, AI model end of life, killed AI products, AI graveyard">
+    <meta property="og:title" content="AIGraveyard — RIP to Every Dead AI Model">
+    <meta property="og:description" content="An interactive memorial for every AI model, product, and API that has been deprecated, sunset, or killed.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles"></div>
+    
+    <header>
+        <h1>⚰️ AIGraveyard</h1>
+        <p class="subtitle">A memorial for every AI model, product, and API that didn't make it.</p>
+        <div class="stats" id="stats"></div>
+    </header>
+
+    <div class="controls">
+        <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All Deaths</button>
+            <button class="filter-btn" data-filter="model">Models</button>
+            <button class="filter-btn" data-filter="product">Products</button>
+            <button class="filter-btn" data-filter="api">APIs</button>
+            <button class="filter-btn" data-filter="company">Companies</button>
+        </div>
+        <div class="sort-group">
+            <select id="sort-select">
+                <option value="died-desc">Most Recent Deaths</option>
+                <option value="died-asc">Oldest Deaths</option>
+                <option value="lifespan-asc">Shortest Lived</option>
+                <option value="lifespan-desc">Longest Lived</option>
+                <option value="name">Alphabetical</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="view-toggle">
+        <button class="view-btn active" data-view="grid" title="Grid View">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><rect x="0" y="0" width="8" height="8" rx="1"/><rect x="10" y="0" width="8" height="8" rx="1"/><rect x="0" y="10" width="8" height="8" rx="1"/><rect x="10" y="10" width="8" height="8" rx="1"/></svg>
+        </button>
+        <button class="view-btn" data-view="timeline" title="Timeline View">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><rect x="8" y="0" width="2" height="18" rx="1"/><circle cx="9" cy="3" r="3"/><circle cx="9" cy="9" r="3"/><circle cx="9" cy="15" r="3"/></svg>
+        </button>
+    </div>
+
+    <main id="graveyard" class="grid-view"></main>
+
+    <div id="timeline-view" class="timeline-view hidden"></div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Know a dead AI product? <a href="https://github.com/MrUnreal/AIGraveyard/issues/new" target="_blank">Open an issue</a> to add it.</p>
+        <p class="footer-note">Built with dark humor and D3.js &middot; Data updated February 2026</p>
+    </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
