@@ -1,6 +1,13 @@
 // AIGraveyard — app.js
 (async function () {
-    const data = await d3.json('data.json');
+    let data;
+    try {
+        data = await d3.json('data.json');
+    } catch (e) {
+        document.getElementById('graveyard').innerHTML = '<div class="no-results">Failed to load data. Please try refreshing the page.</div>';
+        console.error('Failed to load data:', e);
+        return;
+    }
 
     // Parse dates and compute lifespan
     const parseDate = d3.timeParse('%Y-%m-%d');
@@ -32,8 +39,41 @@
     let currentFilter = 'all';
     let currentSort = 'died-desc';
     let currentView = 'grid';
+    let currentSearch = '';
 
+    // --- Update filter count badges ---
+    function updateFilterCounts() {
+        const searchFiltered = currentSearch
+            ? data.filter(d => matchesSearch(d, currentSearch))
+            : data;
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            const filter = btn.dataset.filter;
+            const count = filter === 'all'
+                ? searchFiltered.length
+                : searchFiltered.filter(d => d.type === filter).length;
+            const badge = btn.querySelector('.filter-count');
+            if (badge) badge.textContent = `(${count})`;
+        });
+    }
+
+    function matchesSearch(item, query) {
+        const q = query.toLowerCase();
+        return item.name.toLowerCase().includes(q) ||
+               item.company.toLowerCase().includes(q) ||
+               item.description.toLowerCase().includes(q) ||
+               item.cause.toLowerCase().includes(q);
+    }
+
+    updateFilterCounts();
     renderGrid(data);
+
+    // --- Search ---
+    document.getElementById('search-input').addEventListener('input', (e) => {
+        currentSearch = e.target.value.trim();
+        updateFilterCounts();
+        renderCurrentView();
+    });
 
     // --- Filter Buttons ---
     document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -82,6 +122,9 @@
 
     function filterAndSort(data) {
         let filtered = currentFilter === 'all' ? [...data] : data.filter(d => d.type === currentFilter);
+        if (currentSearch) {
+            filtered = filtered.filter(d => matchesSearch(d, currentSearch));
+        }
         switch (currentSort) {
             case 'died-desc': filtered.sort((a, b) => b.diedDate - a.diedDate); break;
             case 'died-asc': filtered.sort((a, b) => a.diedDate - b.diedDate); break;
@@ -96,11 +139,16 @@
         const container = document.getElementById('graveyard');
         container.innerHTML = '';
 
+        if (items.length === 0) {
+            container.innerHTML = '<div class="no-results">No matching entries found.</div>';
+            return;
+        }
+
         items.forEach((item, i) => {
             const card = document.createElement('div');
             card.className = 'tombstone';
             card.dataset.type = item.type;
-            card.style.animationDelay = `${i * 0.05}s`;
+            card.style.animationDelay = `${i * 0.02}s`;
 
             const bornStr = d3.timeFormat('%b %Y')(item.bornDate);
             const diedStr = d3.timeFormat('%b %Y')(item.diedDate);
@@ -128,6 +176,16 @@
     function renderTimeline(items) {
         const container = document.getElementById('timeline-view');
         container.innerHTML = '';
+
+        if (items.length === 0) {
+            container.innerHTML = '<div class="no-results">No matching entries found.</div>';
+            return;
+        }
+
+        // Add timeline spine
+        const spine = document.createElement('div');
+        spine.className = 'timeline-line';
+        container.appendChild(spine);
 
         // Sort by death date for timeline
         const sorted = [...items].sort((a, b) => b.diedDate - a.diedDate);
