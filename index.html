@@ -24,12 +24,15 @@
     </header>
 
     <div class="controls">
+        <div class="search-group">
+            <input type="text" id="search-input" class="search-input" placeholder="Search dead AI..." autocomplete="off">
+        </div>
         <div class="filter-group">
-            <button class="filter-btn active" data-filter="all">All Deaths</button>
-            <button class="filter-btn" data-filter="model">Models</button>
-            <button class="filter-btn" data-filter="product">Products</button>
-            <button class="filter-btn" data-filter="api">APIs</button>
-            <button class="filter-btn" data-filter="company">Companies</button>
+            <button class="filter-btn active" data-filter="all">All Deaths <span class="filter-count"></span></button>
+            <button class="filter-btn" data-filter="model">Models <span class="filter-count"></span></button>
+            <button class="filter-btn" data-filter="product">Products <span class="filter-count"></span></button>
+            <button class="filter-btn" data-filter="api">APIs <span class="filter-count"></span></button>
+            <button class="filter-btn" data-filter="company">Companies <span class="filter-count"></span></button>
         </div>
         <div class="sort-group">
             <select id="sort-select">
